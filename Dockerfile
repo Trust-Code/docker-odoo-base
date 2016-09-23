@@ -26,9 +26,8 @@ RUN pip install -r pip-requirements && \
 
 RUN apt-get update && apt-get install -y supervisor git
 WORKDIR /opt/odoo/
-RUN git clone -b 8.0 http://github.com/odoo/odoo.git odoo
+RUN git clone -b master http://github.com/odoo/odoo.git odoo
 RUN mkdir private
-
 
 	##### Configurações Odoo #####
 
