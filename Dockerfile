@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y python-pip locales supervisor && \
     apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements) && \
     npm install -g less
 
+RUN apt-get install -y libjpeg-turbo8
 ADD http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
 RUN pip install -r pip-requirements && \
     dpkg -i wkhtmltox.deb && \
