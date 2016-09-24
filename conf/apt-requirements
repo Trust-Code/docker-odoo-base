@@ -15,6 +15,7 @@ npm
 ##### Dependências da Localização Brasileira #####
 libxmlsec1-dev
 python-openssl
+python-cffi
 
 ##### Dependências do WKHTMLTOX #####
 zlib1g-dev
