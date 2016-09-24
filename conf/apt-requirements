@@ -8,6 +8,7 @@ libxslt-dev
 libevent-dev
 libsasl2-dev
 libldap2-dev
+libpq-dev
 nodejs
 npm
 
