@@ -28,7 +28,6 @@ ENV LC_ALL pt_BR.UTF-8
 
 WORKDIR /opt/odoo/
 RUN mkdir private
-# ADD https://github.com/odoo/odoo/archive/master.zip
 
 	##### Configurações Odoo #####
 
