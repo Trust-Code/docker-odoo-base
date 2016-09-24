@@ -12,10 +12,10 @@ ADD conf/pip-requirements /opt/sources/
 
 WORKDIR /opt/sources/
 RUN apt-get update && apt-get install -y python-pip locales supervisor && \
-    pip install --upgrade pip && \
+    pip install --no-cache-dir --upgrade pip && \
     apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements) && \
-    npm install -g less && \
-    pip install -r pip-requirements
+    npm install -g less && npm cache clean && \
+    pip install --no-cache-dir -r pip-requirements
 
 ADD http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
 RUN dpkg -i wkhtmltox.deb && \
