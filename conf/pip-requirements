@@ -35,7 +35,6 @@ reportlab==3.1.44
 requests==2.6.0
 six==1.9.0
 suds-jurko==0.6
-vatnumber==1.2
 vobject==0.6.6
 wsgiref==0.1.2
 XlsxWriter==0.7.7
