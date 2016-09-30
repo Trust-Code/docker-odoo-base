@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y python-pip locales supervisor && \
 
 ADD http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
 RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
-    locale-gen en_US en_US.UTF-8 pt_BR.UTF-8 && \
+    locale-gen en_US en_US.UTF-8 pt_BR pt_BR.UTF-8 && \
     dpkg-reconfigure locales
 
 ENV LC_ALL pt_BR.UTF-8
@@ -39,7 +39,7 @@ RUN mkdir /var/log/odoo && \
     mkdir /var/log/supervisord && \
     touch /var/log/odoo/odoo.log && \
     touch /var/run/odoo.pid && \
-    ln -s /opt/odoo/odoo/odoo.py /usr/bin/odoo-server && \
+    ln -s /opt/odoo/odoo/odoo-bin /usr/bin/odoo-server && \
     ln -s /etc/odoo/odoo.conf && \
     ln -s /var/log/odoo/odoo.log && \
     useradd --system --home /opt --shell /bin/bash --uid 1040 odoo && \
