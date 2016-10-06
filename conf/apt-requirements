@@ -5,6 +5,7 @@ libevent-dev
 libsasl2-dev
 libldap2-dev
 libpq-dev
+libjpeg-dev
 nodejs
 npm
 
