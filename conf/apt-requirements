@@ -13,6 +13,7 @@ npm
 libxmlsec1-dev
 python-openssl
 python-cffi
+pandoc
 
 ##### Dependências do WKHTMLTOX #####
 zlib1g-dev
