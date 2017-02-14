@@ -44,6 +44,6 @@ boto==2.38.0
 odoorpc
 suds_requests
 http://labs.libre-entreprise.org/frs/download.php/897/pyxmlsec-0.3.1.tar.gz
-plotly
-pandas
+plotly==1.13.0
+pandas==0.19.2
 relatorio==0.6.4
