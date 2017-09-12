@@ -11,10 +11,9 @@ ADD conf/apt-requirements /opt/sources/
 ADD conf/pip-requirements /opt/sources/
 
 WORKDIR /opt/sources/
-RUN apt-get update && apt-get install -y python-pip locales supervisor && \
-    apt-get install -y postgresql-client python-libxml2 && \
-    pip install --no-cache-dir --upgrade pip && \
-    apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements) && \
+RUN apt-get update && apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
+RUN pip3 install setuptools
+RUN pip3 install --no-cache-dir --upgrade pip && \
     npm install -g less && npm cache clean && \
     ln -s /usr/bin/nodejs /usr/bin/node && \
     pip install --no-cache-dir -r pip-requirements

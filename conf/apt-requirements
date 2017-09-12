@@ -9,6 +9,13 @@ libjpeg-dev
 nodejs
 npm
 
+# Ferramentas
+postgresql-client
+python-libxml2
+python3-pip
+locales
+supervisor
+
 ##### Dependências da Localização Brasileira #####
 libxmlsec1-dev
 python-openssl
