@@ -13,6 +13,7 @@ postgresql-client
 python3-pip
 locales
 supervisor
+npm
 
 ##### Dependências da Localização Brasileira #####
 libxmlsec1-dev
