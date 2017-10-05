@@ -18,7 +18,7 @@ RUN apt-get update && \
 RUN npm install -g less && npm cache clean && \
     ln -s /usr/bin/nodejs /usr/bin/node
 
-RUN pip install --no-cache-dir --upgrade pip
+#RUN pip install --no-cache-dir --upgrade pip
 RUN	pip install setuptools
 RUN	pip install --no-cache-dir -r pip-requirements
 
