@@ -3,7 +3,6 @@ Babel==2.3.4
 boto==2.48.0
 decorator==4.0.10
 docutils==0.12
-ebaysdk==2.1.4
 feedparser==5.2.1
 gdata==2.0.18
 gevent==1.1.2
