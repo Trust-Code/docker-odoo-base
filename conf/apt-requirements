@@ -1,4 +1,4 @@
-##### Dependências Odoo #####
+##### Dependências Gerais #####
 libxml2-dev
 libxslt-dev
 libevent-dev
@@ -8,6 +8,11 @@ libpq-dev
 libjpeg-dev
 nodejs
 npm
+python-pip
+locales
+supervisor
+postgresql-client
+python-libxml2
 
 ##### Dependências da Localização Brasileira #####
 libxmlsec1-dev
