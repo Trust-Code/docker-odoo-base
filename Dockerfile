@@ -19,8 +19,8 @@ RUN npm install -g less && npm cache clean && \
     ln -s /usr/bin/nodejs /usr/bin/node
 
 #RUN pip install --no-cache-dir --upgrade pip
-RUN	pip install setuptools
-RUN	pip install --no-cache-dir -r pip-requirements
+#RUN	pip install setuptools
+RUN	pip3 install --no-cache-dir -r pip-requirements
 
 ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
 RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
