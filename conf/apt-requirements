@@ -1,5 +1,5 @@
 ##### Dependências Odoo #####
-libxml2-dev
+python3-libxml2
 libxslt-dev
 libevent-dev
 libsasl2-dev
@@ -11,7 +11,6 @@ npm
 
 ##### Ferramentas #####
 postgresql-client
-python-libxml2
 python3-pip
 locales
 supervisor

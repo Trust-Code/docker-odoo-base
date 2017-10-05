@@ -9,8 +9,8 @@ gevent==1.1.2
 greenlet==0.4.10
 Jinja2==2.8
 lxml==3.5.0
-Mako==1.0.4
-MarkupSafe==0.23
+mako==1.0.4
+markupSafe==0.23
 mock==2.0.0
 odoorpc==0.6.0
 ofxparse==0.16
