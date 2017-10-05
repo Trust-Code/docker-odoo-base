@@ -1,13 +1,12 @@
 ##### Dependências Odoo #####
 python3-lxml
 python3-libxml2
-python3-libxslt
-python3-libevent
-python3-libsasl2
-python3-libldap2
-python3-libpq
-python3-libjpeg
-
+libxslt-dev
+libevent-dev
+libsasl2-dev
+libldap2-dev
+libpq-dev
+libjpeg-dev
 
 ##### Ferramentas #####
 postgresql-client
