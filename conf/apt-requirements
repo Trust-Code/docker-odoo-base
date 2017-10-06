@@ -11,6 +11,7 @@ libjpeg-dev
 ##### Ferramentas #####
 postgresql-client
 python3-pip
+python3-dev
 locales
 supervisor
 npm
