@@ -13,18 +13,21 @@ ADD conf/pip-requirements /opt/sources/
 WORKDIR /opt/sources/
 RUN apt-get update && apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
 
-ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
-RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
-    locale-gen en_US en_US.UTF-8 pt_BR pt_BR.UTF-8 && \
+# ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
+# RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
+RUN locale-gen en_US en_US.UTF-8 pt_BR pt_BR.UTF-8 && \
     dpkg-reconfigure locales
 
 ENV LC_ALL pt_BR.UTF-8
 
 RUN pip3 install setuptools
-RUN pip3 install --no-cache-dir --upgrade pip && \
-    npm install -g less && npm cache clean && \
-    ln -s /usr/bin/nodejs /usr/bin/node && \
-    pip3 install --no-cache-dir -r pip-requirements
+RUN pip3 install --no-cache-dir --upgrade pip
+RUN npm install -g less && npm cache clean
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+RUN apt-get install -y gcc
+RUN pip3 install --no-cache-dir -r pip-requirements
+ADD conf/brasil-requirements /opt/sources/
+RUN pip3 install --no-cache-dir -r brasil-requirements
 
 	##### Repositórios TrustCode e OCB #####
 

@@ -1,0 +1,14 @@
+# odoo-brasil
+suds-jurko-requests
+python3-cnab
+python3-boleto
+xmlsec
+pytrustnfe3
+
+# trustcode-addons
+boto==2.38.0
+plotly==1.13.0
+pandas==0.19.2
+relatorio==0.6.4
+urllib3==1.22
+pyopenssl==17.2.0
