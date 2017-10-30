@@ -13,8 +13,8 @@ ADD conf/pip-requirements /opt/sources/
 WORKDIR /opt/sources/
 RUN apt-get update && apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
 
-# ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
-# RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
+ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
+RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
 RUN locale-gen en_US en_US.UTF-8 pt_BR pt_BR.UTF-8 && \
     dpkg-reconfigure locales
 
