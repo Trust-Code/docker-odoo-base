@@ -1,9 +1,6 @@
 # odoo-brasil
 suds-jurko-requests
-python3-cnab
-python3-boleto
 xmlsec
-pytrustnfe3
 
 # trustcode-addons
 boto==2.38.0
