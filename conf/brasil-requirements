@@ -9,3 +9,4 @@ pandas==0.19.2
 relatorio==0.6.4
 urllib3==1.22
 pyopenssl==17.2.0
+num2words==0.5.6
