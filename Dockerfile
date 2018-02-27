@@ -40,7 +40,7 @@ RUN mkdir /var/log/odoo && \
     mkdir /var/log/supervisord && \
     touch /var/log/odoo/odoo.log && \
     touch /var/run/odoo.pid && \
-    ln -s /opt/odoo/odoo/odoo-bin /usr/bin/odoo-server && \
+    ln -s /opt/odoo/odoo/openerp-server /usr/bin/odoo-server && \
     ln -s /etc/odoo/odoo.conf && \
     ln -s /var/log/odoo/odoo.log && \
     useradd --system --home /opt --shell /bin/bash --uid 1040 odoo && \
