@@ -50,3 +50,4 @@ relatorio==0.6.4
 xlrd==1.0.0
 urllib3==1.22
 pyopenssl==17.2.0
+simplejson==3.13.2
