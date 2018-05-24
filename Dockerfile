@@ -13,7 +13,6 @@ ADD conf/pip-requirements /opt/sources/
 WORKDIR /opt/sources/
 RUN apt-get update && apt-get install -y python-pip locales supervisor && \
     apt-get install -y postgresql-client python-libxml2 && \
-    pip install --no-cache-dir --upgrade pip && \
     apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements) && \
     npm install -g less && npm cache clean && \
     ln -s /usr/bin/nodejs /usr/bin/node && \
