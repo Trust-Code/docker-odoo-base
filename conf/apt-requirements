@@ -22,6 +22,7 @@ python-openssl
 python-cffi
 
 ##### Dependências do WKHTMLTOX #####
+wkhtmltopdf
 zlib1g-dev
 fontconfig
 libfreetype6
