@@ -39,7 +39,7 @@ vobject==0.6.6
 wsgiref==0.1.2
 XlsxWriter==0.7.7
 xlwt==0.7.5
-openpyxl==2.4.0-b1
+openpyxl==2.5.7
 boto>=2.38.0
 odoorpc
 suds_requests
