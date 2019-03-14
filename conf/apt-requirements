@@ -10,6 +10,7 @@ nodejs
 npm
 
 # Ferramentas
+gcc
 postgresql-client
 python3-pip
 python3-dev
@@ -17,18 +18,17 @@ locales
 supervisor
 
 ##### Dependências da Localização Brasileira #####
-libxmlsec1-dev
-python-openssl
-python-cffi
+# python-openssl
+# python-cffi
 
 ##### Dependências do WKHTMLTOX #####
 wkhtmltopdf
-zlib1g-dev
-fontconfig
-libfreetype6
-libfreetype6-dev
-libx11-6
-libxext6
-libxrender1
-libjpeg-turbo8
-gsfonts
+# zlib1g-dev
+# fontconfig
+# libfreetype6
+# libfreetype6-dev
+# libx11-6
+# libxext6
+# libxrender1
+# libjpeg-turbo8
+# gsfonts

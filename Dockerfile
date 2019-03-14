@@ -23,8 +23,6 @@ ENV LC_ALL pt_BR.UTF-8
 RUN pip3 install setuptools
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN npm install -g less && npm cache clean
-# RUN ln -s /usr/bin/nodejs /usr/bin/node
-RUN apt-get install -y gcc
 RUN pip3 install --no-cache-dir -r pip-requirements
 ADD conf/brasil-requirements /opt/sources/
 RUN pip3 install --no-cache-dir -r brasil-requirements
