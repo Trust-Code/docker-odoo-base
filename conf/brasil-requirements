@@ -11,3 +11,4 @@ urllib3==1.22
 pyopenssl==17.2.0
 num2words==0.5.6
 twilio
+pika==0.12.0
