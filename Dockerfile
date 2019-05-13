@@ -7,27 +7,31 @@ RUN echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d
 
 	##### Dependências #####
 
+RUN apt-get update
+
 ADD conf/apt-requirements /opt/sources/
 ADD conf/pip-requirements /opt/sources/
 
 WORKDIR /opt/sources/
-RUN apt-get update && apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
+RUN apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
 
-# ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb /opt/sources/wkhtmltox.deb
-# RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+    apt-get install -y nodejs && \
+    curl -L https://www.npmjs.com/install.sh | sh && \
+    npm install -g less && npm cache clean --force
+
 RUN locale-gen en_US en_US.UTF-8 pt_BR pt_BR.UTF-8 && \
     dpkg-reconfigure locales
 
 ENV LC_ALL pt_BR.UTF-8
 
-RUN pip3 install setuptools
-RUN pip3 install --no-cache-dir --upgrade pip
-RUN npm install -g less && npm cache clean
-RUN pip3 install --no-cache-dir -r pip-requirements
 ADD conf/brasil-requirements /opt/sources/
-RUN pip3 install --no-cache-dir -r brasil-requirements
+RUN pip3 install setuptools && pip3 install --no-cache-dir --upgrade pip
+RUN pip3 install --no-cache-dir -r pip-requirements && \
+    pip3 install --no-cache-dir -r brasil-requirements
 
-	##### Repositórios TrustCode e OCB #####
+ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb /opt/sources/wkhtmltox.deb
+RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb
 
 WORKDIR /opt/odoo/
 RUN mkdir private
