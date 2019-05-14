@@ -18,6 +18,7 @@ unzip
 git
 wget
 gettext-base
+openssh-client
 
 ##### Dependências da Localização Brasileira #####
 libssl-dev
