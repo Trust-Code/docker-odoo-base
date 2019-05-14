@@ -14,6 +14,10 @@ python3-dev
 locales
 supervisor
 curl
+unzip
+git
+wget
+gettext-base
 
 ##### Dependências da Localização Brasileira #####
 libssl-dev
