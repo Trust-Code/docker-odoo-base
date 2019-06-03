@@ -19,6 +19,7 @@ git
 wget
 gettext-base
 openssh-client
+postgresql-client
 
 ##### Dependências da Localização Brasileira #####
 libssl-dev
