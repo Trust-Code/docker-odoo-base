@@ -14,3 +14,4 @@ twilio
 pika==0.12.0
 openpyxl>=2.6.2
 iugu-trustcode
+mysql-connector-python
