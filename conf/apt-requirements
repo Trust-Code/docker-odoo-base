@@ -10,7 +10,7 @@ libjpeg-dev
 # Ferramentas
 gcc
 python3-pip
-python3.7-dev
+python3-dev
 locales
 supervisor
 curl

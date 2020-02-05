@@ -13,6 +13,7 @@ ADD conf/apt-requirements /opt/sources/
 ADD conf/pip-requirements /opt/sources/
 
 WORKDIR /opt/sources/
+RUN mkdir /var/run
 RUN apt-get install -y --no-install-recommends $(grep -v '^#' apt-requirements)
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
