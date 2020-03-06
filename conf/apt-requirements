@@ -6,28 +6,32 @@ libsasl2-dev
 libldap2-dev
 libpq-dev
 libjpeg-dev
-nodejs
-npm
 
 # Ferramentas
-postgresql-client
+gcc
 python3-pip
 python3-dev
 locales
 supervisor
+curl
+unzip
+git
+wget
+gettext-base
+openssh-client
+postgresql-client
 
 ##### Dependências da Localização Brasileira #####
+libssl-dev
 libxmlsec1-dev
 python-openssl
 python-cffi
 
+
 ##### Dependências do WKHTMLTOX #####
-zlib1g-dev
 fontconfig
-libfreetype6
-libfreetype6-dev
 libx11-6
 libxext6
 libxrender1
-libjpeg-turbo8
-gsfonts
+xfonts-base
+xfonts-75dpi
