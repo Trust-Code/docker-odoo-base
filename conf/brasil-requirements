@@ -6,3 +6,6 @@ xmlsec
 urllib3==1.22
 pyopenssl==17.2.0
 iugu-trustcode
+
+# Atualizacao
+click-odoo-contrib
