@@ -34,6 +34,7 @@ RUN pip3 install --no-cache-dir -r pip-requirements && \
 ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb /opt/sources/wkhtmltox.deb
 RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb
 
+RUN mkdir /opt/odoo/
 WORKDIR /opt/odoo/
 RUN mkdir private
 
