@@ -3,8 +3,6 @@ stages:
 
 build:
   stage: build
-  tags:
-    - odoo
   image:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
