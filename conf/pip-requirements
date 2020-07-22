@@ -43,7 +43,7 @@ openpyxl==2.5.7
 boto>=2.38.0
 odoorpc
 suds_requests
-http://labs.libre-entreprise.org/frs/download.php/897/pyxmlsec-0.3.1.tar.gz
+pyxmlsec-next
 plotly==1.13.0
 numpy==1.14.6
 pandas==0.19.2
