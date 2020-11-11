@@ -19,6 +19,7 @@ libxcb1-dev
 
 # Ferramentas
 gcc
+g++
 python3-pip
 python3-dev
 locales
