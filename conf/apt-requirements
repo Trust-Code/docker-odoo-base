@@ -8,9 +8,9 @@ libpq-dev
 libjpeg-dev
 libtiff5-dev
 libjpeg8-dev
-ibopenjp2-7-dev
+libopenjp2-7-dev
 zlib1g-dev
-ibfreetype6-dev
+libfreetype6-dev
 liblcms2-dev
 libwebp-dev
 libharfbuzz-dev
