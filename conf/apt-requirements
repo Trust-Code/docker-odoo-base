@@ -6,6 +6,16 @@ libsasl2-dev
 libldap2-dev
 libpq-dev
 libjpeg-dev
+libtiff5-dev
+libjpeg8-dev
+ibopenjp2-7-dev
+zlib1g-dev
+ibfreetype6-dev
+liblcms2-dev
+libwebp-dev
+libharfbuzz-dev
+libfribidi-dev
+libxcb1-dev
 
 # Ferramentas
 gcc
