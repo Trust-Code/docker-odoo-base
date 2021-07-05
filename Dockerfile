@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends $(grep -v '^#' 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get install -y nodejs && \
     curl -L https://www.npmjs.com/install.sh | sh && \
-    npm install -g less && npm cache clean --force
+    npm install -g less@3.13.1 && npm cache clean --force
 
 ADD https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb /opt/sources/wkhtmltox.deb
 RUN dpkg -i wkhtmltox.deb && rm wkhtmltox.deb && \
