@@ -14,3 +14,6 @@ twilio
 pika==0.12.0
 iugu
 mysql-connector-python
+
+# Atualizacao
+click-odoo-contrib
