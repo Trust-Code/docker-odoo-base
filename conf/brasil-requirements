@@ -12,3 +12,4 @@ click-odoo-contrib
 
 # Sentry
 sentry-sdk
+raven
