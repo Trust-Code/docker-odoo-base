@@ -9,3 +9,6 @@ iugu-trustcode
 
 # Atualizacao
 click-odoo-contrib
+
+# Sentry
+sentry-sdk
