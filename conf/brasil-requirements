@@ -3,7 +3,7 @@ suds-jurko-requests
 xmlsec
 
 # trustcode-addons
-boto3>=1.5.12
+boto3==1.5.12
 plotly==2.4.1
 numpy==1.17.0
 pandas==0.19.2
