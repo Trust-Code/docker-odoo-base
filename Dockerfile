@@ -27,7 +27,7 @@ ENV LC_ALL pt_BR.UTF-8
 
 
 ADD conf/brasil-requirements /opt/sources/
-RUN pip3 install setuptools && pip3 install --no-cache-dir --upgrade pip
+RUN pip3 install setuptools==50.3.2 && pip3 install --no-cache-dir pip==20.3.4
 RUN pip3 install --no-cache-dir -r pip-requirements && \
     pip3 install --no-cache-dir -r brasil-requirements
 
