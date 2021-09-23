@@ -13,3 +13,6 @@ click-odoo-contrib
 # Sentry
 sentry-sdk
 raven
+
+plotly
+pandas
