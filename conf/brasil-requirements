@@ -4,7 +4,7 @@ xmlsec
 
 # trustcode-addons
 urllib3==1.22
-pyopenssl==17.2.0
+pyopenssl==20.0.1
 iugu-trustcode
 
 # Atualizacao
